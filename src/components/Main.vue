@@ -1,7 +1,7 @@
 <template>
-  <header>
-    <img src="" alt="">
-  </header>
+<div>
+  
+</div>
 </template>
 
 <script>
