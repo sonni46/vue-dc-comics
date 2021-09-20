@@ -1,12 +1,12 @@
 <template>
-  <header id="header">
-    <div class="container">
+  <header>
+    <div class="container m-t-20">
       <div class="logo">
         <img src="../assets/img/dc-logo.png" alt="">
       </div>
       <div class="menu">
         <ul>
-          <li v-for="(link,index) in links" :key="index">
+          <li v-for="(link,index) in links" :key="index" :class="(link.current === true) ? 'active': null">
             <a :href="link.url">{{link.name}}</a>
           </li>
         </ul>
@@ -80,6 +80,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../style/Utilitis";
-
-
+@import "../style/Header";
 </style>

@@ -1,0 +1,34 @@
+.menu {
+    width: 60%;
+    margin-left: auto;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+
+             li {
+                list-style: none;
+                padding: 45px 0;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                      
+                        
+                    &:hover {
+                        color: #0c7cec;
+                    }
+                }
+
+                &.active {
+                    color: #0c7cec;
+                    border-bottom:4px solid #0c7cec;
+                }
+            }
+        }
+    }
+
+.m-t-20 {
+    margin-top: 20px;
+}
