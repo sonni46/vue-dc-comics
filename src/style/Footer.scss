@@ -1,0 +1,23 @@
+.fot-img {
+    background-image: url("../assets/img/footer-bg.jpg");
+    background-size: cover;
+    padding: 100px;
+    position: relative;
+    z-index: -2;
+
+    li {
+        color: rgb(133, 133, 133);
+        list-style: none;
+        h3 {
+            color: white;
+        }
+    }
+    
+    img {
+        position: absolute;
+        top: 0;
+        right: 20%;
+        transform: translate(0, -15%);
+        z-index: -1;
+    }
+}

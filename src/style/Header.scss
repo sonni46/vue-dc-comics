@@ -20,15 +20,15 @@
                         color: #0c7cec;
                     }
                 }
-
-                &.active {
-                    color: #0c7cec;
-                    border-bottom:4px solid #0c7cec;
-                }
             }
         }
     }
 
 .m-t-20 {
     margin-top: 20px;
+}
+
+.active {
+    color: #0c7cec;
+    border-bottom:4px solid #0c7cec;
 }

@@ -10,7 +10,6 @@
         <ul class="comics">
           <li v-for="(img,index) in imgs" :key="index">
             <div>
-              <img :src="'../assets/img/' + img.imgT" alt="">
               <span>{{img.title}}</span>
             </div>
           </li>
@@ -27,23 +26,23 @@ export default {
     return {
       imgs : [
         {
-          imgT : "buy-comics-digital-comics.png",
+          url : "buy-comics-digital-comics.png",
           title : "DIGITAL COMICS"
         },
         {
-          imgT : "buy-comics-merchandise.png",
+          url : "buy-comics-merchandise.png",
           title : "DC MERCHANDISE",
         },
         {
-          imgT : "buy-comics-subcriptions.png",
+          url : "buy-comics-subcriptions.png",
           title : "SUBSCRIPTIONS",
         },
         {
-          imgT : "buy-comics-shop-locator.png",
+          url : "buy-comics-shop-locator.png",
           title : "COMICS SHOP LOCATOR"
         },
         {
-          imgT : "buy-dc-power-visa.svg",
+          url : "buy-dc-power-visa.svg",
           title : "DC POWER VISA",
         },
       ]

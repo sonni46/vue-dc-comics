@@ -2,7 +2,7 @@
   <header>
     <div class="container m-t-20">
       <div class="logo">
-        <img src="../assets/img/dc-logo.png" alt="">
+        <img src="@/assets/img/dc-logo.png" alt="">
       </div>
       <div class="menu">
         <ul>
@@ -20,7 +20,7 @@ export default {
   name: 'Header',
   data() {
     return {
-      links : [
+          links : [
         {
           name : "CHARACTERS",
           url : "#",
