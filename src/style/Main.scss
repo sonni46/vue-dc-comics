@@ -56,3 +56,32 @@ main {
     z-index: 2;
 }
 
+.jumbotron {
+    img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.cdComicImg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-comics {
+    width:calc(100% / 6);
+    margin-top: 20px;
+    font-size: 14px;   
+}
+
+.loadMore {
+    text-align: center;
+    margin-top: 20px;
+
+         span {
+            padding: 10px 50px;
+            background-color: #0c7cec;
+        }
+}
