@@ -1,153 +1,61 @@
 <template>
   <footer>
     <div class="fot-img">
-      <div class="container">
-        <div>
+      <div class="container-fot">
+        <div class="foot">
             <div>
                 <ul>
                   <li><h3>DC COMICS</h3></li>
-                  <li v-for="(link,index) in links[0].info" :key="index"><a href="">{{info.text}}</a></li>
+                  <li v-for="(link,index) in links[0].info" :key="index"><a href="">{{link.text}}</a></li>
                 </ul>
-              </div>
+                 <ul class="pad-top">
+                  <li><h3>SHOP</h3></li>
+                  <li v-for="(link,index) in links[1].info" :key="index"><a href="">{{link.text}}</a></li>
+                </ul>
+            </div>
+            <div>
+                 <ul>
+                  <li><h3>DC</h3></li>
+                  <li v-for="(link,index) in links[2].info" :key="index"><a href="">{{link.text}}</a></li>
+                </ul>
+            </div>
+            <div>
+                 <ul>
+                  <li><h3>SITES</h3></li>
+                  <li v-for="(link,index) in links[3].info" :key="index"><a href="">{{link.text}}</a></li>
+                </ul>
+            </div>
         </div>
         <div>
           <img src="@/assets/img/dc-logo-bg.png" alt="">
         </div>
       </div>
-      <div>
-
-      </div>
     </div>
+     <div class="background-black pos-rel d-felx align-center" >
+          <div class="container-fot-1 pad-50">
+              <div>
+                  <h2>SING UP NOW</h2>
+              </div>
+          </div>
+          <div class="social">
+              <h2>FOLLOW US</h2>
+              <ul>
+                  <li v-for="(Img,index) in Imgs" :key="index"><img :src="require(`@/assets/img/${Img.info}`)" alt=""></li>
+              </ul>
+          </div>
+      </div>
   </footer>
 </template>
 
 <script>
+import * as Links from "@/assets/data/Links.js";
+import * as Img from '@/assets/data/Imgs.js'
 export default {
   name: 'Footer',
   data() {
     return {
-      links : [
-      {
-          title: "DC COMICS",
-          info: [
-              {
-              text: "characters",
-              url: "#",
-              },
-              {
-                  text: "comics",
-                  url: "#",
-              },
-              {
-                  text: "movie",
-                  url: "#",
-              },
-              {
-                  text: "TV",
-                  url: "#",
-              },
-              {
-                  text: "games",
-                  url: "#",
-              },
-              {
-                  text: "video",
-                  url: "#",
-              },
-              {
-                  text: "news",
-                  url: "#",
-              },
-          ]
-      },
-      {
-          title: "SHOP",
-          info: [
-              {
-                  text: "Shop DC",
-                  url: "#",
-              },
-              {
-                  text: "Shop DC collectibles",
-                  url: "#",
-              },
-          ]
-      },
-      {
-          title: "DC",
-          info: [
-              {
-              text: "Terms Of Use",
-              url: "#",
-              },
-              {
-                  text: "Privacy policy (New)",
-                  url: "#",
-              },
-              {
-                  text: "Ad Choices",
-                  url: "#",
-              },
-              {
-                  text: "Advertising",
-                  url: "#",
-              },
-              {
-                  text: "Jobs",
-                  url: "#",
-              },
-              {
-                  text: "Subscriptions",
-                  url: "#",
-              },
-              {
-                  text: "Talent Workshops",
-                  url: "#",
-              },
-              {
-                  text: "CPSC Certificates",
-                  url: "#",
-              },
-              {
-                  text: "Ratings",
-                  url: "#",
-              },
-              {
-                  text: "Shop Help",
-                  url: "#",
-              },
-              {
-                  text: "Contact Us",
-                  url: "#",
-              },
-          ]
-      },
-      {
-          title: "SITES",
-          info: [
-              {
-              text: "DC",
-              url: "#",
-              },
-              {
-              text: "MAD Magazzine",
-              url: "#",
-              },
-              {
-              text: "DC Kids",
-              url: "#",
-              },
-              {
-              text: "DC Universe",
-              url: "#",
-              },
-              {
-              text: "DC Power Visa",
-              url: "#",
-              },
-          ]
-      },
-  ]
+      links : Links.footerLinks,
+      Imgs : Img.footerSocials
   }
   }
 }
@@ -157,4 +65,5 @@ export default {
 <style scoped lang="scss">
 @import "../style/Utilitis";
 @import "../style/Footer";
+@import "../style/Main";
 </style>

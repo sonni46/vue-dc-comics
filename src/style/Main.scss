@@ -29,6 +29,14 @@ main {
     list-style: none;
     display: flex;
     justify-content: space-around;
+
+        li {
+            display: flex;
+
+                img {
+                    width: 80px;
+                }
+        }
         
     div {
         display: flex;
@@ -39,4 +47,12 @@ main {
             }
         }  
     }
+
+.pos-rel {
+    position: relative;
+}
+    
+.z-index {
+    z-index: 2;
+}
 

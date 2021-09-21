@@ -1,9 +1,60 @@
-const headerLinks = 
+const headerLinks = [
+    {
+      name : "CHARACTERS",
+      url : "#",
+      current : false,
+    },
+    {
+      name : "COMICS",
+      url : "#",
+      current : true,
+    },
+    {
+      name : "MOVIES",
+      url : "#",
+      current : false,
+    },
+    {
+      name : "TV",
+      url : "#",
+      current : false,
+    },
+    {
+      name : "GAMES",
+      url : "#",
+      current : false,
+    },
+    {
+      name : "COLLECTIBLES",
+      url : "#",
+      current : false,
+    },
+    {
+      name : "VIDEOS",
+      url : "#",
+      current : false,
+    },
+    {
+      name : "FANS",
+      url : "#",
+      current : false,
+    },
+    {
+      name : "NEWS",
+      url : "#",
+      current : false,
+    },
+    {
+      name : "SHOP",
+      url : "#",
+      current : false,
+    },
+];
 
   const footerLinks = [
     {
         title: "DC COMICS",
-        links: [
+        info: [
             {
             text: "characters",
             url: "#",
@@ -36,7 +87,7 @@ const headerLinks =
     },
     {
         title: "SHOP",
-        links: [
+        info: [
             {
                 text: "Shop DC",
                 url: "#",
@@ -49,7 +100,7 @@ const headerLinks =
     },
     {
         title: "DC",
-        links: [
+        info: [
             {
             text: "Terms Of Use",
             url: "#",
@@ -98,7 +149,7 @@ const headerLinks =
     },
     {
         title: "SITES",
-        links: [
+        info: [
             {
             text: "DC",
             url: "#",
@@ -121,6 +172,8 @@ const headerLinks =
             },
         ]
     },
-]
+];
+
+
 
 export { headerLinks, footerLinks}

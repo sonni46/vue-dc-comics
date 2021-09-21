@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container m-t-20">
+    <div class="container d-felx m-t-20">
       <div class="logo">
         <img src="@/assets/img/dc-logo.png" alt="">
       </div>
@@ -16,62 +16,12 @@
 </template>
 
 <script>
+import * as Links from "@/assets/data/Links.js"
 export default {
   name: 'Header',
   data() {
     return {
-          links : [
-        {
-          name : "CHARACTERS",
-          url : "#",
-          current : false,
-        },
-        {
-          name : "COMICS",
-          url : "#",
-          current : true,
-        },
-        {
-          name : "MOVIES",
-          url : "#",
-          current : false,
-        },
-        {
-          name : "TV",
-          url : "#",
-          current : false,
-        },
-        {
-          name : "GAMES",
-          url : "#",
-          current : false,
-        },
-        {
-          name : "COLLECTIBLES",
-          url : "#",
-          current : false,
-        },
-        {
-          name : "VIDEOS",
-          url : "#",
-          current : false,
-        },
-        {
-          name : "FANS",
-          url : "#",
-          current : false,
-        },
-        {
-          name : "NEWS",
-          url : "#",
-          current : false,
-        },
-        {
-          name : "SHOP",
-          url : "#",
-          current : false,
-        },
-      ]
+          links : Links.headerLinks
     }
   }
 }

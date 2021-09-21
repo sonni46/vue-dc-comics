@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="pos-rel z-index ">
     <div class="background-black">
       <div class="container font-s-50 pad-30">
         <span> -- Content goes hear -- </span>
@@ -9,6 +9,7 @@
       <div class="container">
         <ul class="comics">
           <li v-for="(img,index) in imgs" :key="index">
+            <img :src="require(`@/assets/img/${img.url}`)" alt="">
             <div>
               <span>{{img.title}}</span>
             </div>
@@ -20,32 +21,12 @@
 </template>
 
 <script>
+import * as Img from '@/assets/data/Imgs.js'
 export default {
   name: 'Main',
   data() {
     return {
-      imgs : [
-        {
-          url : "buy-comics-digital-comics.png",
-          title : "DIGITAL COMICS"
-        },
-        {
-          url : "buy-comics-merchandise.png",
-          title : "DC MERCHANDISE",
-        },
-        {
-          url : "buy-comics-subcriptions.png",
-          title : "SUBSCRIPTIONS",
-        },
-        {
-          url : "buy-comics-shop-locator.png",
-          title : "COMICS SHOP LOCATOR"
-        },
-        {
-          url : "buy-dc-power-visa.svg",
-          title : "DC POWER VISA",
-        },
-      ]
+      imgs : Img.mainImg
     }
   }
 }
