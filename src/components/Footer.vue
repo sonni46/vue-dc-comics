@@ -31,18 +31,20 @@
         </div>
       </div>
     </div>
-     <div class="background-black pos-rel d-felx align-center" >
+     <div class="background-black pos-rel" >
+       <div class="container-fot-2 d-felx align-center">
           <div class="container-fot-1 pad-50">
-              <div>
+              <div class="sing">
                   <h2>SING UP NOW</h2>
               </div>
           </div>
           <div class="social">
-              <h2>FOLLOW US</h2>
+              <h2 class="follow">FOLLOW US</h2>
               <ul>
                   <li v-for="(Img,index) in Imgs" :key="index"><img :src="require(`@/assets/img/${Img.info}`)" alt=""></li>
               </ul>
           </div>
+        </div>
       </div>
   </footer>
 </template>

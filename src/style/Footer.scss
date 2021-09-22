@@ -27,7 +27,7 @@
 }
 
 .foot {
-width: 50%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
 }
@@ -44,6 +44,11 @@ width: 50%;
     display: flex;
 }
 
+.container-fot-2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .pad-top {
     padding-top: 20px;
 }
@@ -58,10 +63,10 @@ width: 50%;
 }
 
 .social {
-    width: 20%;
+    width: 25%;
     display: flex;
 
-        h2 {
+        .follow{
             padding-right: 10px;
             color: #0c7cec;
         }
@@ -74,4 +79,13 @@ width: 50%;
                 margin-right: 10px;
             }
         }   
-}
+    }
+
+.sing {
+    color: white;
+
+        h2 {
+            padding: 20px;
+            border: 2px solid #0c7cec;
+        }
+    }
